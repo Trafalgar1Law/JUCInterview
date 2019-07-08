@@ -2,7 +2,7 @@ package com.atguigu.JMM;
 
 public class SingletonDemo {
     //原先的单例模式
-    //这里的volati防止指令重排
+    //这里的volatile防止指令重排
     private static volatile SingletonDemo singletonDemo=null;
 
     private SingletonDemo(){
