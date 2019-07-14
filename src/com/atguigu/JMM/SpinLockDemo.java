@@ -5,6 +5,9 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * 手写一个自旋锁，根据compareandset改编
+ * 好处：不会立即阻塞，减少线程切换的消耗
+ * 坏处：循环久了性能下降
+ *
  */
 public class SpinLockDemo {
     //原子引用线程
